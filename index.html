@@ -10,23 +10,78 @@
 </head>
 
 <body style="background-color: rgb(30, 30, 30);">
-    <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
-        aria-controls="offcanvasExample">
-        Ajouter un post-it
-    </a>
+    <div class="row justify-content-around my-3 gap-3">
+        <a class="btn btn-outline-warning col-lg-3 col-8" data-bs-toggle="offcanvas" href="#offcanvasExample"
+            role="button" aria-controls="offcanvasExample">
+            Ajouter un post-it
+        </a>
+        <button type="button" class="btn btn-outline-danger col-lg-3 col-8">
+            Reset
+        </button>
+    </div>
 
     <div class="offcanvas offcanvas-start bg-dark" tabindex="-1" id="offcanvasExample"
         aria-labelledby="offcanvasExampleLabel">
         <div class="offcanvas-header">
-            <h5 class="offcanvas-title text-white" id="offcanvasExampleLabel">Post-it game</h5>
-            <button type="button" class="btn-close bg-danger" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <h5 class="offcanvas-title text-white" id="offcanvasExampleLabel">Ajout de post-it</h5>
+            <button type="button" class="btn-close bg-danger" data-bs-dismiss="offcanvas" aria-label="Close"
+                id="closeButton"></button>
         </div>
         <div class="offcanvas-body">
-            <input type="text" class="form-control m-2" id="titlePostIt" placeholder="Titre du post-it">
-            <input type="text" class="form-control m-2" id="textPostIt" placeholder="Contenu du post-it">
+            <input type="text" class="form-control m-2" id="titlePostItEntry" placeholder="Titre du post-it">
+            <textarea class="form-control m-2" id="textPostItEntry" placeholder="Contenu du post-it"
+                style="height: 20rem;"></textarea>
+            <div class="row justify-content-around">
+                <button type="button" class="btn btn-success col-3" id="validateButton">Valider</button>
+                <button type="button" class="btn btn-danger col-3" id="cancelButton">Annuler</button>
+            </div>
         </div>
     </div>
 
+    <div class="row gap-3 justify-content-around my-5">
+
+        <div class="col-lg-3 col-md-6 col-10 card bg-transparent border-white" id="postit">
+            <div class="card-body">
+                <div class="row justify-content-between">
+                    <h5 class="card-title text-white col-10" id="titlePostIt">test</h5>
+                    <button type="button" class="btn-close bg-danger col-lg-4 col-10 mx-2" aria-label="Close"
+                        id="closeCard"></button>
+                </div>
+                <hr class="border border-white border-2 opacity-50">
+                <p class="card-text text-white" id="textPostIt">test</p>
+            </div>
+        </div>
+        
+        <div class="col-lg-3 col-md-6 col-10 card bg-transparent border-white" id="postit">
+            <div class="card-body">
+                <div class="row justify-content-between">
+                    <h5 class="card-title text-white col-10" id="titlePostIt">test</h5>
+                    <button type="button" class="btn-close bg-danger col-lg-4 col-10 mx-2" aria-label="Close"
+                        id="closeCard"></button>
+                </div>
+                <hr class="border border-white border-2 opacity-50">
+                <p class="card-text text-white" id="textPostIt">test</p>
+            </div>
+        </div>
+        
+        <div class="col-lg-3 col-md-6 col-10 card bg-transparent border-white" id="postit">
+            <div class="card-body">
+                <div class="row justify-content-between">
+                    <h5 class="card-title text-white col-10" id="titlePostIt">test</h5>
+                    <button type="button" class="btn-close bg-danger col-lg-4 col-10 mx-2" aria-label="Close"
+                        id="closeCard"></button>
+                </div>
+                <hr class="border border-white border-2 opacity-50">
+                <p class="card-text text-white" id="textPostIt">test</p>
+            </div>
+        </div>
+
+
+
+
+
+
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
