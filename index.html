@@ -10,12 +10,12 @@
 </head>
 
 <body style="background-color: rgb(30, 30, 30);">
-    <div class="row justify-content-around my-3 gap-3">
+    <div class="row justify-content-around container m-auto gap-3 my-4">
         <a class="btn btn-outline-warning col-lg-3 col-8" data-bs-toggle="offcanvas" href="#offcanvasExample"
             role="button" aria-controls="offcanvasExample">
             Ajouter un post-it
         </a>
-        <button type="button" class="btn btn-outline-danger col-lg-3 col-8">
+        <button type="button" class="btn btn-outline-danger col-lg-3 col-8" id="resetButton">
             Reset
         </button>
     </div>
@@ -38,49 +38,7 @@
         </div>
     </div>
 
-    <div class="row gap-3 justify-content-around my-5">
-
-        <div class="col-lg-3 col-md-6 col-10 card bg-transparent border-white" id="postit">
-            <div class="card-body">
-                <div class="row justify-content-between">
-                    <h5 class="card-title text-white col-10" id="titlePostIt">test</h5>
-                    <button type="button" class="btn-close bg-danger col-lg-4 col-10 mx-2" aria-label="Close"
-                        id="closeCard"></button>
-                </div>
-                <hr class="border border-white border-2 opacity-50">
-                <p class="card-text text-white" id="textPostIt">test</p>
-            </div>
-        </div>
-        
-        <div class="col-lg-3 col-md-6 col-10 card bg-transparent border-white" id="postit">
-            <div class="card-body">
-                <div class="row justify-content-between">
-                    <h5 class="card-title text-white col-10" id="titlePostIt">test</h5>
-                    <button type="button" class="btn-close bg-danger col-lg-4 col-10 mx-2" aria-label="Close"
-                        id="closeCard"></button>
-                </div>
-                <hr class="border border-white border-2 opacity-50">
-                <p class="card-text text-white" id="textPostIt">test</p>
-            </div>
-        </div>
-        
-        <div class="col-lg-3 col-md-6 col-10 card bg-transparent border-white" id="postit">
-            <div class="card-body">
-                <div class="row justify-content-between">
-                    <h5 class="card-title text-white col-10" id="titlePostIt">test</h5>
-                    <button type="button" class="btn-close bg-danger col-lg-4 col-10 mx-2" aria-label="Close"
-                        id="closeCard"></button>
-                </div>
-                <hr class="border border-white border-2 opacity-50">
-                <p class="card-text text-white" id="textPostIt">test</p>
-            </div>
-        </div>
-
-
-
-
-
-
+    <div class="row gap-3 justify-content-around my-5" id="postit">
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
