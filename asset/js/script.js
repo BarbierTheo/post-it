@@ -19,7 +19,7 @@ document.getElementById("validateButton").addEventListener("click", function () 
 if(title=="" || text==""){
     alert("Veuillez rentrer un titre et une description")
 } else {
-    document.getElementById("postit").innerHTML += `<div class="col-lg-3 col-md-10 col-10 card bg-transparent border-white" id="child-${i}">
+    document.getElementById("postit").innerHTML += `<div class="col-lg-3 col-md-9 col-9 card bg-transparent border-white" id="child-${i}">
                 <div class="card-body">
                     <div class="row justify-content-between">
                         <h5 class="card-title text-white col-10" id="titlePostIt">${title}</h5>
